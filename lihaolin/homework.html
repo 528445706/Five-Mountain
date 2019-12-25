@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="uft-8">
+	<title>华山Demo</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="animate.js"></script>
+</head>
+	<body>
+      <div id="top">
+      	<div id="top_1">
+      		<div id="top_1_1">云起太华山，云山互明灭</div>
+      		<img src="image/logo.jpg">
+      	</div>   
+      		<div id="tt">		 
+      	<img src="image/logo2.jpg">
+        <input id="search" type="text" value="">
+        <div id="searchClick">搜索</div>
+      	</div>  	
+        <div id="top_2">
+        	<ul id="top_ul">
+        		<a href="ex.html"><li>泰山</li></a>
+        		<a><li>衡山</li></a>
+        		<a><li>恒山</li></a>
+        		<a><li>嵩山</li></a>
+        		<a><li>华山</li></a>
+        	</ul>
+        </div>     	   	
+      </div>
+      <div id="LM">
+      	<div id="LM_1">
+      		<div id="MT">山顶</div>
+      		<div id="MC">山峰</div>
+      		<div id="MB">山峡</div>
+      	</div>
+      	<img  id="LM_img" src="image/华山山顶.jpg">
+      </div>
+		<div class="box" id="box">
+		<div class="slider" id="slider">
+			<div class="slide"><img src="image/华山3.jpg" alt=""></div>
+			<div class="slide"><img src="image/华山1 (1).jpg." alt=""></div>
+			<div class="slide"><img src="image/华山2.jpg" alt=""></div>
+			<div class="slide"><img src="image/华山3.jpg" alt=""></div>
+			<div class="slide"><img src="image/华山1 (1).jpg." alt=""></div>
+		</div>
+		<span id="left"><</span>
+		<span id="right">></span>
+		 <ul class="nav" id="nav">
+        	<li class="active" >1</li>
+        	<li >2</li>
+        	<li >3</li>
+        </ul>
+	</div>
+	     <div id="RM">
+	     	<div id="RM_1">
+	     		<p>《寄华山司空图》唐朝·齐己                                  </p>
+	     		<div>天下艰难际，全家入华山。<br>几劳丹诏问，空见使臣还。<br> 瀑布寒吹梦，莲峰翠湿关。<br>兵戈阻相访，身老瘴云间。</div>
+	     	</div>
+	     	<div id="RM_2">
+	     		<p>《华山题王母祠》唐朝·李商隐                                 </p>
+	     		<div>莲华峰下锁雕梁，<br>此去瑶池地共长。<br>  好为麻姑到东海，<br>劝栽黄竹莫栽桑。</div>
+	     	</div>
+	     	<div id="RM_3">
+	     		<p>《送僧归华山》唐朝·贯休                               </p>
+	     		<div>心枯衲亦枯，归岳揭空盂。<br>七贵留不住，孤云出更孤。 <br>烧灰犹汤足，雪片似黏须。<br>他日如相觅，还应道到吴。</div>
+	     	</div>
+	     </div>
+	     <div id="passageNav">
+	     	优美词: 
+	     	<div id="pa1">词1</div>
+	     	<div id="pa2">词2</div>
+	     	<div id="pa3">词3</div>
+	     </div>
+	     <div id="textP" style="text-align:center;height: 30px;line-height: 30px;"></div>
+	     <div id="textArea">
+	     </div>
+	<div id="INFO" style=" right: 90px;opacity: 0;"><img src="image/QQCode.jpg"></div>
+	<div id="QQ"><img src="image/qq.jpg"></div>
+	<div id="Info" style=" right: 90px;opacity: 0;"><img src="image/Code.png"></div>
+	<div id="wechat"><img src="image/imagick.jpg"></div>
+	<script type="text/javascript">
+	var box=document.getElementById("box");
+    	var navList=document.getElementById("nav").children;
+    	var slider=document.getElementById("slider");
+    	var left=document.getElementById("left");
+    	var right=document.getElementById("right");
+    	var index=1;
+    	var timer;
+    	var isMoving=false;
+    	function SliderNext(){
+    		if(!isMoving){
+    			isMoving=true;
+    		index++;
+    		 ColorChange();
+              animate(slider,{left:-800*index},function(){
+                    if(index >3){
+                     slider.style.left="-800px";index=1;     
+                } 
+                isMoving=false;
+            });
+          }
+        }
+        function SliderPrevious(){
+        	if(!isMoving){
+    			isMoving=true;
+    		index--;
+    		ColorChange();
+              animate(slider,{left:-800*index},function(){
+                    if(index==0){
+                     slider.style.left="-2400px";index=3;     
+                } 
+                isMoving=false;
+            });
+          }
+        }
+    	timer=setInterval(SliderNext,3000);
+        box.onmouseover=function(){
+          animate(left,{opacity:50});
+           animate(right,{opacity:50});
+           clearInterval(timer);
+        }
+        box.onmouseout=function(){
+        	 animate(left,{opacity:0});
+           animate(right,{opacity:0});
+           timer=setInterval(SliderNext,3000);
+        }
+        right.onclick=SliderNext;
+        left.onclick=SliderPrevious;
+       for(var i=0;i<navList.length;i++)
+       {navList[i].idx=i;
+       	navList[i].onclick=function(){
+       		if(!isMoving){
+    			isMoving=true;
+         index=this.idx+1;
+          ColorChange();
+         animate(slider,{left:-800*index},function(){       isMoving=false;
+            });   
+       }
+       }
+   }
+       function ColorChange(){
+        for(var i=0;i<navList.length;i++)
+           navList[i].className="";
+       if(index==4)
+       	navList[0].className="active";
+       else if(index==0)
+       	navList[2].className="active";
+       else
+       	navList[index-1].className="active";
+       }
+       var Info=document.getElementById("Info");
+       var wechat=document.getElementById("wechat");
+       wechat.onmouseover=function(){
+       animate(Info,{right:70,opacity:100});
+       }
+       wechat.onmouseout=function(){
+         animate(Info,{right:90,opacity:0});   
+
+       }
+        var INFO=document.getElementById("INFO");
+       var qq=document.getElementById("QQ");
+      QQ.onmouseover=function(){
+       animate(INFO,{right:75,opacity:100});
+       }
+       QQ.onmouseout=function(){
+         animate(INFO,{right:90,opacity:0});   
+
+       }
+       var MT=document.getElementById("MT");
+        var MC=document.getElementById("MC");
+         var MB=document.getElementById("MB");
+       var LM_img=document.getElementById("LM_img");
+       MT.onmouseover=function(){
+       	LM_img.src="image/华山山顶.jpg";
+       }
+       MC.onmouseover=function(){
+       	LM_img.src="image/华山山峰.jpg";
+       }
+       MB.onmouseover=function(){
+       	LM_img.src="image/华山山峡.jpg";
+       }
+       var arrP=["《与萧远上人游少华山寄皇甫侍御》唐朝·李端","《华山李炼师所居》唐朝·皮日休","《夏日华山别韩博士愈》唐朝·鲍溶"];
+       var arrC=["寻危兼采药，渡水又登山。独与高僧去，逍遥落日间。 渐看闾里远，自觉性情闲。回首知音在，因令怅望还。",
+       "麻姑古貌上仙才，谪向莲峰管玉台。瑞气染衣金液启， 香烟映面紫文开。孤云尽日方离洞，双鹤移时只有苔。 深夜寂寥存想歇，月天时下草堂来。",
+"别地泰华阴，孤亭潼关口。夏日可畏时，望山易迟久。 暂因车马倦，一逐云先后。碧霞气争寒，黄鸟语相诱。 三峰多异态，迥举仙人手。天晴捧日轮，月夕弄星斗。"];
+       var search=document.getElementById("search");
+       var searchClick=document.getElementById("searchClick");
+       var pa1=document.getElementById("pa1");
+        var pa2=document.getElementById("pa2");
+         var pa3=document.getElementById("pa3");
+         var textArea=document.getElementById("textArea");
+         var textP=document.getElementById("textP");
+         pa1.onclick=function(){
+         	textP.innerHTML=arrP[0];
+         	textArea.innerHTML=arrC[0];
+         }
+         pa2.onclick=function(){
+         	textP.innerHTML=arrP[1];
+         	textArea.innerHTML=arrC[1];
+         }
+         pa3.onclick=function(){
+         	textP.innerHTML=arrP[2];
+         	textArea.innerHTML=arrC[2];
+         }
+         searchClick.onclick=function(){
+         if(search.innerHTML=="泰山")
+         	window.location.href="";
+         if()
+         	window.location.href="http://www.jb51.net";
+         if()
+         	window.location.href="http://www.jb51.net";
+         if()
+         	window.location.href="http://www.jb51.net";
+         }
+    </script> 
+
+</body>
+</html>
