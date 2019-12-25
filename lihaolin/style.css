@@ -1,0 +1,439 @@
+/*
+* @Author: Lenovo
+* @Date:   2019-12-18 16:13:13
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2019-12-25 15:15:32
+*/
+body{
+	background-color: #9AFF9A;
+}
+
+*{margin:0;
+padding:0;}
+#box{width: 800px;
+    height: 420px;
+    overflow: hidden;
+    border: 1px solid;
+    position: relative;
+    margin: 0 auto;
+    top: -422px;
+}
+#slider{
+    height: 420px;
+    width:4000px;
+    position: absolute;
+    left: -800px;
+}
+.slide{
+   width: 800px;
+   height: 420px;
+   overflow: hidden;
+   float: left;
+}
+img{
+   width: 800px;
+   height: 420px;
+}
+span{
+	display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 30px;
+    text-align: center;
+    opacity: 0;
+    cursor:pointer;
+    background-color: red;
+}
+#left{
+	position: absolute;
+	left: 30px;
+	top: 200px;
+}
+#right{
+	position: absolute;
+	right: 30px;
+	top: 200px;
+}
+ul,li{list-style: none;}
+li{display: inline-block;
+  margin-left: 30px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: grey;
+  cursor:pointer;
+ }
+ .nav{
+	display: block;
+	height: 30px;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+   top: 350px;
+   left: 50px;
+}
+.active{
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#top{
+    height: 200px;
+    border: 1px solid red;
+    position: relative;
+}
+#tt{
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 30px;
+	line-height: 30px;
+	background-color: 	#9AFF9A;
+
+}
+#tt>img{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	left: 300px;
+	opacity: 0.5;
+}
+#searchClick{
+	height: 28px;
+	line-height: 28px;
+	width: 50px;
+	position: absolute;
+	left: 803px;
+	top: 0;
+	background-color:#8B7355 ;
+    text-align: center;
+    cursor:pointer;
+}
+#search{
+	height: 23px;
+	width: 400px;
+	position: absolute;
+	top: 1px;
+	left: 400px;
+	background: white;
+	border: 2px solid black;
+
+}
+#top_1{
+    position: relative;
+    top: 0px;
+    height: 100px;
+       background:#87CEEB;
+}
+#top_1_1{
+	position: absolute;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 4em;
+	font-family: 楷体;
+	width: 800px;
+	right: 0;
+}
+#top_1>img{
+	border-radius: 30px;
+	position: absolute;
+	top: 0;
+	right: 900px;
+	height: 100px;
+    width: 200px;
+}
+#top_2{
+    position: relative;
+    top: 30px;
+    height: 70px;
+}
+#top_ul{
+	  height: 70px;
+	  background:#8B7355;
+}
+#top_ul>a>li{
+	  display: inline-block;
+      margin-left: 60px;
+      height: 70px;
+      line-height: 70px;
+  width: 100px;
+  text-align: center;
+  border-radius: 35px;
+  background-color: blue;
+  cursor:pointer;
+  font-size: 2em;
+	font-family: 楷体;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右侧夹微信 与qq*/
+#wechat{
+	position: fixed;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	top: 270px;
+	right: 10px;
+	cursor:pointer;
+	opacity: 0.5;
+
+}
+#wechat>img{
+    height: 40px;
+    width: 40px;
+}
+#Info{
+    position: fixed;
+    height: 60px;
+    width: 100px;
+    top: 250px;
+
+}
+#Info>img{
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	height: 90px;
+	width: 90px;
+}
+#QQ{
+	position: fixed;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	top: 200px;
+	right: 10px;
+	cursor:pointer;
+	opacity: 0.5;
+
+}
+#QQ>img{
+    height: 40px;
+    width: 40px;
+}
+#INFO{
+    position: fixed;
+    height: 60px;
+    width: 100px;
+    top: 150px;
+}
+#INFO>img{
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	height: 110px;
+	width: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#LM{position: relative;
+	width: 229px;
+	height: 420px;
+}
+#LM_1{
+	background-color: #BBFFFF;
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 229px;
+}
+#LM_img{
+	position: absolute;
+	bottom: 0;
+	height: 270px;
+	width: 229px;
+
+}
+
+#MT{
+	position: absolute;
+	height: 150px;
+	line-height: 150px;
+	width: 76px;
+	top: 0;
+	left: 0px;
+}
+#MC{
+	position: absolute;
+	height: 150px;
+	line-height: 150px;
+	width: 76px;
+	border-left: 2px solid;
+	top: 0;
+	left: 76px;
+}
+#MB{
+	position: absolute;
+	height: 150px;
+	line-height: 150px;
+	width: 76px;
+	border-left: 2px solid;
+	top: 0;
+	left: 152px;
+}
+
+
+
+
+
+
+
+#RM{background-color: #BBFFFF;
+	width: 229px;
+	height: 420px;
+	position: absolute;
+	right: 0;
+	top: 202px;
+}
+#RM_1{
+	position: absolute;
+	height: 140px;
+	width: 229px;
+	text-align: center;
+	top: 0;
+}
+#RM_1>p{
+	position: absolute;
+	left: 0;
+}
+#RM_1>div{
+	position: absolute;
+	top: 40px;
+}
+#RM_2{
+	position: absolute;
+	height: 140px;
+	width: 229px;
+	text-align: center;
+	top: 140px;
+}
+#RM_2>p{
+	position: absolute;
+	left: 0;
+}
+#RM_2>div{
+	position: absolute;
+	top: 40px;
+}
+#RM_3{
+	position: absolute;
+	height: 140px;
+	width: 229px;
+	top: 280px;
+	text-align: center;
+}
+#RM_3>p{
+	position: absolute;
+	left: 0;
+}
+#RM_3>div{
+	position: absolute;
+	top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#passageNav{
+      position: absolute;
+      height: 80px;
+      line-height: 80px;
+      left: 0;
+      right: 0;
+      top: 623px;
+   background: #EEE685;
+}
+#pa1{
+	position: absolute;
+	left: 400px;
+	width: 60px;
+	height: 80px;
+	line-height: 80px;
+	top: 0;
+	cursor:pointer;
+}
+#pa2{
+	position: absolute;
+	left: 500px;
+	width: 60px;
+	height: 80px;
+	line-height: 80px;
+	top: 0;
+	cursor:pointer;
+}
+#pa3{
+	position: absolute;
+	left: 600px;
+	width: 60px;
+	height: 80px;
+	line-height: 80px;
+	top: 0;
+	cursor:pointer;
+}
+#textP{
+	position: absolute;
+	background-color: #FFE7BA ;
+	top: 703px;
+	height: 30px;
+	line-height: 30px;
+	left: 0;
+	right: 0;
+}
+#textArea{
+	position: absolute;
+	background-color:	#FFE7BA ;
+	top: 733px;
+	left: 0px;
+	right: 0px;
+	height: 200px;
+	line-height: 20px;
+}
