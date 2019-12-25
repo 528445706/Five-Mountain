@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>恒山</title>
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+    body{
+        background-image:url(./picture/pic.jpg); 
+        background-repeat:no-repeat; 
+        background-attachment:fixed;
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+        opacity:90%;
+    }
+	ul,li{
+        list-style: none;
+    }
+    a{
+    	text-decoration: none;
+    }
+	#topa{
+		height:50px;
+		background-color:rgb(160,180,240);
+	}
+    #topa>p{
+        text-align: center;
+        font-size:50px;
+        font-family:"Arial Black";
+        font-weight:bold;
+        font-style:italic;
+    }
+    #topb{
+        height:80px;
+        background-color:azure;
+    }
+	#topba>ul>li{
+        font-family:楷体;
+	    display: inline-block;
+	    width: 150px;
+	    font-size: 30px;
+	    font-weight: bold;
+	    height: 80px;
+	    line-height: 80px;
+	    text-align: center;
+	}
+    #topba>ul>li>a{
+        font-family:楷体;
+        color:deepskyblue;
+    }
+	#topba>ul>li>a:hover{
+	    text-decoration:none;
+	    color:red;
+	}
+	#topba>ul>li:hover{
+		background: pink;
+	}
+	#topc{
+		height:1650px;
+		background-color:#ccc;
+	}
+	#pica{
+        position: relative;
+        left:0px;
+        top:0px;
+		height:800px;
+		width: 1560px;
+        opacity:20%;
+	}
+    #picb{
+        height:800px;
+        width: 1560px;
+        opacity:30%;
+    }
+	#topca{
+		position:absolute;
+		left:160px;
+		top:150px;
+		height:50px;
+		width:180px;
+		background-color:rgb(230,170,200);
+		opacity:80%;
+        font-size:30px;
+        font-family:楷书;
+        font-weight:bold;
+        line-height:50px;
+        color:firebrick;
+    }
+	#topcb{
+		height:360px;
+		width:1200px;
+		background:red;
+		position:absolute;
+		left:160px;
+		top:230px;
+        opacity:90%;
+	}
+	#box{
+        width:1200px;
+        height:360px;
+        border:1px solid #ccc;
+        position:relative;
+        overflow: hidden;
+    }
+    .slider{
+        width:8400px;
+        position:absolute;
+        left:-1200px;
+    }
+    .slide{
+        width:1200px;
+        overflow: hidden;
+        float:left;
+    }
+    span{
+        display:block;
+        width:30px;
+        height:50px;
+        text-align:center;
+        cursor:pointer;
+        color:white;
+        top:175px;
+        line-height:50px;
+        background:rgb(230,170,200);
+        font-size: 30px;
+        position:absolute;
+        opacity:0;
+    }
+    #left{
+        position: :absolute;
+        left:80px;
+        top:160px;
+    }
+    #right{
+        position:absolute;
+        right:80px;
+        top:160px;
+    }
+    .nav{
+        position:absolute;
+        left:850px;
+        bottom:20px;
+    }
+    .nav>li{
+        float:left;
+        background: #ccc;
+        cursor: pointer;
+        margin: 0 10px;
+        border-radius: 50%;
+        text-align: center;
+        width:10px;
+        height:10px;
+        font-size: 18px;
+    }
+    .nav .active{
+        background: white;
+    }
+	.pic{
+		width:1200px;
+        height:360px;
+	}
+    #bottoma{
+        position:absolute;
+        top:620px;
+        left:140px;
+        width:300px;
+        height:300px;
+        border-radius:50%;
+        background:red;
+        opacity: 80%;
+    }
+    #bottoma>img{
+        border-radius:50%;
+        width:300px;
+        height:300px;
+        float:left;
+    }
+    #bottomb{
+        position:absolute;
+        top:600px;
+        left:500px;
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        background: red;
+    }
+    #bottomb>img{
+        border-radius:50%;
+        width:200px;
+        height:200px;
+        float:left;
+    }
+    #bottomc{
+        position:absolute;
+        top:650px;
+        left:760px;
+        width:250px;
+        height:250px;
+        border-radius:50%;
+        background:red;
+    }
+    #bottomc>img{
+        border-radius:50%;
+        width:250px;
+        height:250px;
+        float:left;
+    }
+    #bottomd{
+        position:absolute;
+        top:620px;
+        left:1080px;
+        width:300px;
+        height:300px;
+        border-radius:50%;
+        background: red;
+    }
+    #bottomd>img{
+        border-radius:50%;
+        width:300px;
+        height:300px;
+        float:left;
+    }
+    .bottom{
+        display: inline;
+    }
+    #text{
+        width:700px;
+        position:absolute;
+        left:100px;
+        top:950px;
+    }
+    #text>h1{
+        text-align:center;
+        font-size:40px;
+        font-weight:bold;
+        font-family:楷体 ;
+    } 
+    p{
+        font-size:20px;
+        font-family:楷体;
+        text-indent:2em;
+        line-height:35px;
+    }
+    #vedio{
+        height:200px;
+        position:absolute;
+        left:920px;
+        top:1000px;
+        width:480px;
+        height:360px;
+    }
+    #stop{
+        height:200px;
+        width:1200px;
+        position:absolute;
+        left:160px;
+        top:1530px;
+    }
+    .letter>a>img{
+        height:200px;
+        width:200px;
+        float:left;
+        display: inline-block;
+    }
+    #topc>p{
+        position: absolute;
+        top:1480px;
+        left:100px;
+        color:brown;
+        font-size:35px;
+        font-weight:bold;
+    }
+</style>
+</head>
+<script src="./js/animate.js"></script>
+<body>
+	<div id="topa">
+		<p>Welcome To HengShan</p>
+	</div>
+    <div id="topb">
+        <div id="topba">
+            <ul>
+                <li><a href="#" >泰山</a></li>
+                <li><a href="#" >衡山</a></li>
+                <li><a href="#" >恒山</a></li>
+                <li><a href="#" >嵩山</a></li>
+                <li><a href="#" >华山</a></li>
+            </ul>
+        </div>
+    </div>
+	<div id="topc">
+        <div id="topca">&nbsp;&nbsp;&nbsp;&nbsp;大美恒山</div>
+		<div id="topcb">
+			<div class="box" id="box">
+	            <div class="slider" id="slider">
+                    <div class="slide"><img src="./picture/down-05.jpg" alt="" class="pic"/></div>
+	            	<div class="slide"><img src="./picture/f4db510f101cb48e2e3b5aa4159f18d2.jpg" alt="" class="pic"/></div>
+	                <div class="slide"><img src="./picture/down-02.jpg" alt="" class="pic"/></div>
+	                <div class="slide"><img src="./picture/down-03.jpg" alt="" class="pic"/></div>
+                    <div class="slide"><img src="./picture/down-04.jpg" alt="" class="pic"/></div>
+                    <div class="slide"><img src="./picture/down-05.jpg" alt="" class="pic"/></div>
+	                <div class="slide"><img src="./picture/f4db510f101cb48e2e3b5aa4159f18d2.jpg" alt="" class="pic"/></div>
+	            </div>
+	            <span id="left"> < </span>
+	            <span id="right"> > </span>
+	            <ul class="nav" id="nav">
+	                <li class="active"></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	                <li></li>
+	            </ul>
+	        </div>
+		</div>
+
+		<div id="bottoma" class="bottom"><img src="./picture/07.jpg" alt=""/></div>
+		<div id="bottomb" class="bottom"><img src="./picture/08.jpg" alt=""/></div>
+        <div id="bottomc" class="bottom"><img src="./picture/09.jpg" alt=""/></div>
+        <div id="bottomd" class="bottom"><img src="./picture/10.jpg" alt=""/></div>
+    <div id="text">
+        <h1>北岳恒山</h1>
+        <p>
+            位于山西省浑源县城南10公里处，主峰天峰岭海拔2016.8米 [1]  ，号称“人天北柱”、“绝塞名山”。广义的恒山，或称恒山山脉，是山西省大同市东南部、河北省张家口市南部，桑干河、滹沱河之间一系列山峰的总称，大致西南－东北走向延伸，东西长近300公里左右，南北宽80公里左右，最高峰为代县、应县边界处的馒头山，海拔2426米。
+        </p>
+        <p>
+            恒山横亘于山西北部高原与冀中平原之间，因其险峻的自然山势和地理位置的特点，成为兵家必争之地。山间河谷处的倒马关、紫荆关、平型关、雁门关、宁武关虎踞为险，是塞外高原通向太原盆地、冀中平原之咽喉要冲。许多帝王、名将都在此打过仗，古代关隘、城堡、烽火台等众多古代战场遗迹保存了下来。
+        </p>
+        <p>
+        自明代，被列为北岳，清初，北岳国家祭祀也逐渐由河北曲阳移至浑源恒山，五岳文化融入恒山文化中。恒山道教始于西汉，北魏始兴盛，成为主流全真派圣地。
+        恒山山脉也是山西省矿产资源的富集区，是山西省东北部煤、铁等的主产区。
+        </p>
+    </div>
+    <div id="vedio">
+        <video width="480" height="360" controls="controls">
+            <source src="./picture/恒山.mp4" type="video/mp4">
+        </video>
+	</div>
+
+    <p>美图欣赏</p>
+    <div id="stop">
+        <div class="letter"><a href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%8D%8E%E5%B1%B1%20%E9%AB%98%E6%B8%85%E5%9B%BE&hs=2&pn=2&spn=0&di=69850&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=3162350693%2C3526356215&os=3193240475%2C3656626541&simid=4106689515%2C690978727&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fimg1.qunarzz.com%2Ftravel%2Fd8%2F1612%2F2c%2Fbdaeed8b1572cfb5.jpg_r_720x480x95_f52ad491.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fp6wejs_z%26e3Bq7gw6_z%26e3Bv54AzdH3Fr-rsc8d9c0d&gsm=&islist=&querylist="><img src="./picture/泰山.jpg" alt=""/></a></div>
+
+        <div class="letter"><a href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E8%A1%A1%E5%B1%B1%20%E9%AB%98%E6%B8%85%E5%9B%BE&hs=2&pn=4&spn=0&di=18480&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=3979964983%2C164167226&os=4141007748%2C138303701&simid=4268863275%2C687944592&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fimg1.qjy168.com%2FsearchImg%2F2016%2F01%2F09%2F2718_201601092059034127.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bq3y8mb_z%26e3Bv54AzdH3Ft4w2jAzdH3Fndlcmda9_z%26e3Bip4s&gsm=&islist=&querylist="><img src="./picture/衡山.jpg" alt=""/></a></div>
+
+        <div class="letter"><a href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%8D%8E%E5%B1%B1%20%E9%AB%98%E6%B8%85%E5%9B%BE&hs=2&pn=52&spn=0&di=33000&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=372018776%2C712165025&os=470462080%2C1505012462&simid=0%2C0&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fwww.coop116.com%2Fimages%2Fupload%2Fimage%2F20141113%2F20141113104139_10727.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bg5ejscda_z%26e3BgjpAzdH3F%25El%25bD%25la%25EE%25b9%25ba%25EE%25b9%25lC%25Em%25A9%25bB%25Ec%25BA%25Ad%25Em%25AB%25ll%25Em%25Ac%25bd%25Em%25Ab%25BB%25E0%25AB%25BBAzdH3F&gsm=&islist=&querylist="><img src="./picture/time1.jpg" alt=""/></a></div>
+
+        <div class="letter"><a href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%8D%8E%E5%B1%B1%20%E9%AB%98%E6%B8%85%E5%9B%BE&hs=2&pn=56&spn=0&di=5830&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=1580557612%2C1088649768&os=2804331450%2C2577431945&simid=3231839198%2C3905238271&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fpic1.16pic.com%2F00%2F56%2F21%2F16pic_5621817_b.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3B8mrtv_z%26e3Bv54AzdH3Fri5p5AzdH3Frtv_cmd8b80_z%26e3Bip4s&gsm=&islist=&querylist="><img src="./picture/嵩山.jpg" alt=""/></a></div>
+
+        <div class="letter"><a href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%8D%8E%E5%B1%B1%20%E9%AB%98%E6%B8%85%E5%9B%BE&hs=2&pn=63&spn=0&di=108240&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=3947648161%2C210249380&os=1211269429%2C75125885&simid=0%2C0&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fp0.meituan.net%2Fdpgroup%2Fff56716daa14aa5571ea3361d3723a7b2165458.gif%40600w_600h_0e_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20&fromurl=ippr_z2C%24qAzdH3FAzdH3Ff_z%26e3B1twgrtg2_z%26e3Bv54AzdH3Fp5rtvAzdH3Fdl0lbm08%3Frw2jg5%3D8&gsm=&islist=&querylist="><img src="./picture/华山.gif" alt=""/></a></div>
+
+        <div class="letter"><a href="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%8D%8E%E5%B1%B1%20%E9%AB%98%E6%B8%85%E5%9B%BE&hs=2&pn=37&spn=0&di=8470&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=1955106003%2C1153208653&os=481667853%2C3587540494&simid=3387540523%2C369728543&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa05703af3370581fb78897f93a44511184a52f53da4a-rOZayP_fw658&fromurl=ippr_z2C%24qAzdH3FAzdH3Fi7wkwg_z%26e3Bv54AzdH3FrtgfAzdH3F88d009d99nAzdH3F&gsm=&islist=&querylist="><img src="./picture/time3.jpg" alt=""/></a></div>
+    </div>
+</div>
+</body>
+<script>
+	var box = document.getElementById("box");
+    var oNavlist = document.getElementById("nav").children;
+    var slider = document.getElementById("slider");
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    var word = document.getElementById("word");
+    var index = 1;
+    var timer;
+    var isMoving = false;
+    var ind = 100;
+
+    function next(){
+        if(isMoving){
+            return;
+        }
+        isMoving = true;
+        index++;
+        navChange();
+        animate(slider,{left:-1200*index},function(){
+            if(index===6){
+                slider.style.left = "-1200px";
+                index = 1;
+            }
+            isMoving = false;
+        });
+    }
+
+    function prev(){
+        if(isMoving){
+            return;
+        }
+        isMoving = true;
+        index--;
+        navChange();
+        animate(slider,{left:-1200*index},function(){
+            if(index===0){
+                slider.style.left = -1200*5 +"px";
+                index=5;
+            }
+            isMoving = false;
+        });
+    }
+    timer = setInterval(next,3000);
+
+    var timer = setInterval(function(){
+        index++;
+        animate(slider,{left:-1200*index},function(){
+            if(index==6){
+                slider.style.left = "-1200px";
+                index = 1;
+            }
+        });
+    },3000);
+    
+    box.onmouseover = function(){
+        animate(left,{opacity:50});
+        animate(right,{opacity:50});
+        clearInterval(timer);
+    }
+    box.onmouseout = function(){
+        animate(left,{opacity:0});
+        animate(right,{opacity:0});
+        timer = setInterval(next,3000);
+    }
+    right.onclick = next;
+    left.onclick = prev;
+
+    for(var i = 0;i < oNavlist.length ; i++){
+        oNavlist[i].idx = i;
+        oNavlist[i].onclick = function(){
+            index = this.idx + 1;
+            navChange();
+            animate(slider,{left:-1200*index})
+        }
+    }
+
+    function navChange(){
+        for(var i = 0;i<oNavlist.length;i++){
+            oNavlist[i].className =  "";
+        }
+        if(index===6){
+            oNavlist[0].className = "active" ;
+        }
+        else if(index===0){
+            oNavlist[4].className = "active" ;
+        }
+        else{
+            oNavlist[index-1].className = "active" ;
+        }
+    }
+</script>
+</html>
+
+
