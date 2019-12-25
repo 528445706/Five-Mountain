@@ -1,0 +1,811 @@
+<!DOCTYPE><!DOCTYPE html>
+<html>
+<head>
+	<title>衡山</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		 }
+/* 		body{
+			background: url("veer-313777699.jpg");
+			background-size: cover;
+			opacity: 0.6;
+		} */
+		*{
+			margin:0;
+			padding:0;
+		 }
+		#topa{
+			height:80px;
+			background: lightgray;
+		}
+		#topb{
+			height:80px;
+		}
+		.flag{
+		}
+		#topba>ul>li{
+    		margin: 0 auto;
+    		display: inline-block;
+    		width: 150px;
+    		font-size: 30px;
+    		font-weight: bold;
+    		height: 80px;
+    		line-height: 80px;
+    		text-align: center;
+		}
+		#topba>ul>li>a{
+			text-decoration: none;
+		}
+		#topba>ul>li:hover{
+    		text-decoration:underline; 
+    		color:red;
+		}
+		#topc{
+			height:800px;
+		}
+		#topca{
+			position:relative;
+			left:160px;
+			top:20px;
+			font-size:20px;
+			height:50px;
+			width:150px;
+			line-height:50px;
+			background-color:rgb(230,170,200);
+		}
+		#box{
+			overflow: hidden;
+			height:500px;
+			width:1200px;
+			position:relative;
+			left:160px;
+			top:40px;
+		}
+		.slide>img{
+			width: 1200px;
+			height: 500px;
+		}
+		#subscript{
+			position: absolute;
+			top: 460px;
+			left: 1050px;
+		}
+		#subscript>li{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			margin-left: 20px;
+			background: lightgray;
+		}
+		.slide{
+			width: 1200px;
+			height: 500px;
+			float: left;
+		}
+		#alter{
+			width: 7200px;
+			height: 500px;
+			position: absolute;
+			left: -1200px;
+			top: 0px;
+		}
+		#navigation{
+			height: 50px;
+			position: relative;
+			top: 20px;
+		}
+		#n1{
+			float: left;
+			height: 50px;
+			width: 90px;
+			position: relative;
+			left: 160px;
+		}
+		#n1:hover{
+			background: lightgray;
+		}
+		#n1>p:hover{
+			color: white;
+		}
+		#n2{
+			float: left;
+			height: 50px;
+			width: 90px;
+			position: relative;
+			left: 256px;
+		}
+		#n2:hover{
+			background: lightgray;
+		}
+		#n2>p:hover{
+			color: white;
+		}
+		#n3{
+			float: left;
+			height: 50px;
+			width: 90px;
+			position: relative;
+			left: 352px;
+		}
+		#n3:hover{
+			background: lightgray;
+		}
+		#n3>p:hover{
+			color: white;
+		}
+		#n4{
+			float: left;
+			height: 50px;
+			width: 90px;
+			position: relative;
+			left: 438px;
+		}
+		#n4:hover{
+			background: lightgray;
+		}
+		#n4>p:hover{
+			color: white;
+		}
+		#n5{
+			float: left;
+			height: 50px;
+			width: 90px;
+			position: relative;
+			left: 534px;
+		}
+		#n5:hover{
+			background: lightgray;
+		}
+		#n5>p:hover{
+			color: white;
+		}
+		#n6{
+			float: left;
+			height: 50px;
+			width: 90px;
+			position: relative;
+			left: 630px;
+		}
+		#n6:hover{
+			background: lightgray;
+		}
+		#n6>p:hover{
+			color: white;
+		}
+		#n7{
+			float: left;
+			height: 50px;
+			width: 90px;
+			position: relative;
+			left: 726px;
+		}
+		#n7:hover{
+			background: lightgray;
+		}
+		#n7>p:hover{
+			color: white;
+		}
+		#title1{
+			position: absolute;
+			top: 800px;
+			left: 0px;
+			height: 680px;
+			width: 1515px;
+			overflow: hidden;
+		}
+		#symbol1{
+			height: 400px;
+			width: 800px;
+			position: absolute;
+			left: 50px;
+		}
+		#dizhi{
+			height: 680px;
+			width: 660px;
+			position: absolute;
+			left: 850px;
+		}
+		#rongyu{
+			width: 600px;
+			position: absolute;
+			top: 400px;
+			left: 50px;
+		}
+		#rongyu>p{
+			font-size: 15px;
+		}
+		#guanxin{
+			height: 250px;
+			width: 200px;
+			position: absolute;
+			top: 5px;
+			left: 600px;
+			opacity: 0.9;
+		}
+		#poem{
+			position: absolute;
+			top: 1500px;
+			height: 600px;
+			width: 1515px;
+			background-image: url("zhuye4.png");
+			background-size: cover;
+		}
+		#p1{
+			height: 140px;
+			width: 250px;
+			position: relative;
+			left: 450px;
+		}
+		#p2{
+			height: 140px;
+			width: 250px;
+			position: relative;
+			left: 450px;
+			top: 100px;
+		}
+		#p3{
+			height: 140px;
+			width: 350px;
+			position: relative;
+			top: -280px;
+			left: 700px;
+		}
+		#p4{
+			height: 120px;
+			width: 350px;
+			position: absolute;
+			top: 10px;
+			left: 1100px;
+		}
+		#p5{
+			height: 140px;
+			width: 350px;
+			position: absolute;
+			left: 720px;
+			top: 240px;
+		}
+		#p6{
+			height: 140px;
+			width: 250px;
+			position: absolute;
+			left: 1150px;
+			top: 240px;
+		}
+		#p7{
+			height: 150px;
+			width: 350px;
+			position: absolute;
+			top: 440px;
+			left: 1100px;
+		}
+		.cen{
+			text-align: center;
+			font-weight: bold;
+		}
+		#shaolin{
+			position: absolute;
+			top: 2100px;
+			height: 800px;
+			width: 1515px;
+		}
+		#fengcai{
+			font-size:25px;
+			text-align: center;
+			position: relative;
+			top:50px;
+			font-weight:bold;
+		}
+		#fengcai:hover{
+			color: lightgray;
+		}
+		#p1box{
+			overflow: hidden;
+			height: 250px;
+			width: 600px;
+			position: relative;
+			left: 150px;
+			top: 100px;
+		}
+		#pp1:hover{
+			opacity: 0.55;
+		}
+		#p1w{
+			width: 800px;
+			position: relative;
+			top: -20px;
+			left: -200px;
+		}
+		#p1w1{
+			color: white;
+			font-weight: bold;
+		}
+		#p2box{
+			overflow: hidden;
+			height: 250px;
+			width: 300px;
+			position: absolute;
+			top: 133px;
+			left: 760px;
+		}
+		#pp2:hover{
+			opacity: 0.55;
+		}
+		#p2w{
+			width: 800px;
+			position: relative;
+			top: -20px;
+			left: -200px;
+		}
+		#p2w1{
+			color: white;
+			font-weight: bold;
+		}
+		#p3box{
+			overflow: hidden;
+			height: 250px;
+			width: 300px;
+			position: absolute;
+			top: 133px;
+			left: 1070px;
+		}
+		#p3w{
+			width: 800px;
+			position: relative;
+			top: -20px;
+			left: -200px;
+		}
+		#pp3:hover{
+			opacity: 0.55;
+		}
+		#p3w1{
+			color: white;
+			font-weight: bold;
+		}
+		#p4box{
+			overflow: hidden;
+			height: 250px;
+			width: 300px;
+			position: absolute;
+			top: 393px;
+			left: 150px;
+		}
+		#p4w{
+			width: 800px;
+			position: relative;
+			top: -20px;
+			left: -200px;
+		}
+		#pp4:hover{
+			opacity: 0.55;
+		}
+		#p4w1{
+			color: white;
+			font-weight: bold;
+		}
+		#p5box{
+			overflow: hidden;
+			height: 250px;
+			width: 300px;
+			position: absolute;
+			top: 393px;
+			left: 450px;
+		}
+		#p5w{
+			width: 800px;
+			position: relative;
+			top: -20px;
+			left: -200px;
+		}
+		#pp5:hover{
+			opacity: 0.55;
+		}
+		#p5w1{
+			color: white;
+			font-weight: bold;
+		}
+		#p6box{
+			overflow: hidden;
+			height: 250px;
+			width: 300px;
+			position: absolute;
+			top: 393px;
+			left: 760px;
+		}
+		#p6w{
+			width: 800px;
+			position: relative;
+			top: -20px;
+			left: -200px;
+		}
+		#pp6:hover{
+			opacity: 0.55;
+		}
+		#p6w1{
+			color: white;
+			font-weight: bold;
+		}
+		#p7box{
+			overflow: hidden;
+			height: 250px;
+			width: 300px;
+			position: absolute;
+			top: 393px;
+			left: 1070px;
+		}
+		#p7w{
+			width: 800px;
+			position: relative;
+			top: -20px;
+			left: -200px;
+		}
+		#pp7:hover{
+			opacity: 0.55;
+		}
+		#p7w1{
+			color: white;
+			font-weight: bold;
+		}
+		#tianqi{
+			position: absolute;
+			top: 2750px;
+			width: 1515px;
+			height: 500px;
+		}
+		#tianqip{
+			font-size:25px;
+			text-align: center;
+			position: relative;
+			top:50px;
+			font-weight:bold;
+		}
+		#tianqip:hover{
+			color: lightgray;
+		}
+		#sp1{
+			position: relative;
+			top: -30px;
+			left: 500px;
+			font-size: 20px;
+		}
+		#sp2{
+			position: relative;
+			top: -30px;
+			left: 550px;
+			font-size: 20px;
+		}
+		#sp3{
+			position: relative;
+			top: -30px;
+			left: 600px;
+			font-size: 20px;
+			cursor: pointer;
+		}
+		#sp4{
+			position: relative;
+			top: -30px;
+			left: 630px;
+			font-size: 20px;
+			cursor: pointer;
+		}
+		#sp5{
+			position: relative;
+			top: -30px;
+			left: 650px;
+			font-size: 20px;
+		}
+		#sl1{
+			position: relative;
+			top: -28px;
+			left: 650px;
+			font-size: 20px;
+		}
+		#btn{
+			position: relative;
+			top: 1800px;
+		}
+		#back{
+			position: fixed;
+			top: 600px;
+			left: 1464px;
+		}
+	</style>
+	<script src="./animate.js"></script>
+</head>
+<body>
+	<div id="topa">
+		<img style="height:80px;width:150px;position:relative;left:160px;" src="Title.jpg">
+		<span id="sp1">你的位置:石家庄</span>
+		<span id="sp2">天气：晴 &nbsp;&nbsp;&nbsp;温度：2℃</span>
+		<span id="sp3">注册</span>
+		<span id="sp4">登录</span>
+		<span id="sp5">语种切换</span>
+		<select id="sl1">
+			<option value="chi">中文</option>
+			<option value="eng">英文</option>
+			<option value="kre">韩文</option>
+			<option value="jap">日文</option>
+		</select>
+	</div>
+	<div id="topb">
+		<div id="topba">
+            <ul>
+            	<li style="font-family:Fangsong;"><a href="#">泰山</a></li>
+            	<li style="font-family:Fangsong;"><a href="#">衡山</a></li>
+                <li style="font-family:Fangsong;"><a href="#">恒山</a></li>
+                <li style="font-family:Fangsong;"><a href="#">嵩山</a></li>
+                <li style="font-family:Fangsong;"><a href="#">华山</a></li>
+            </ul>
+        </div>
+	</div>
+	<div id="topc">
+		<div id="navigation">
+			<div id="n1">
+				<p style="font-weight: bold; font-family: FangSong; font-size: 22px;position:relative;top:10px">图片欣赏</p>
+			</div>
+			<div id="n2">
+				<p style="font-weight: bold; font-family: FangSong; font-size: 22px;position:relative;top:10px">嵩山介绍</p>
+			</div>
+			<div id="n3">
+				<p style="font-weight: bold; font-family: FangSong; font-size: 22px;position:relative;top:10px">诗意嵩山</p>
+			</div>
+			<div id="n4">
+				<p style="font-weight: bold; font-family: FangSong; font-size: 22px;position:relative;top:10px" id="n4a">少林少林</p>
+			</div>
+			<div id="n5">
+				<p style="font-weight: bold; font-family: FangSong; font-size: 22px;position:relative;top:10px">天气查询</p>
+			</div>
+			<div id="n6">
+				<p style="font-weight: bold; font-family: FangSong; font-size: 22px;position:relative;top:10px">路线情况</p>
+			</div>
+			<div id="n7">
+				<p style="font-weight: bold; font-family: FangSong; font-size: 22px;position:relative;top:10px">旅游结伴</p>
+			</div>
+		</div>
+
+		<div id="box">
+			<div id="alter">
+				<div class="slide"><img src="./lunbo4.jpg"></div>
+				<div class="slide"><img src="./lunbo11.jpg"></div>
+				<div class="slide"><img src="./lunbo2.jpg"></div>
+				<div class="slide"><img src="./lunbo3.jpg"></div>
+				<div class="slide"><img src="./lunbo4.jpg"></div>
+				<div class="slide"><img src="./lunbo11.jpg"></div>
+			</div>
+			<ul id="subscript">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div id="title1">
+		<div id="symbol1">
+			<img style="width:400px; height:300px; float:left;" src="嵩山标志.jpg">
+			<img style="width:400px; height:300px; float:left;" src="f2.jpg">
+			<div id="f1">
+			<span style="float:left;">嵩山位于河南省登封市西北面，西邻古都洛阳，东临郑州，属伏牛山系，国家5A级风景名胜区、世界地质公园，是三教文化的发源地，也是中华文明的重要发源地。
+			嵩山古称“外方”，夏商时称“崇高”“崇山”，西周时称“岳山”，后以嵩山为中央左岱（泰山）右华（华山），定嵩山为五岳中岳，始称“中岳嵩山”。其总面积约为450平方公里，由太室山与少室山组成，共72峰，最高峰连天峰高达1512米。</span>
+			</div>
+		</div>
+		<div id="dizhi">
+			<img src="dizhi.jpg">
+			<p style="position:relative; top:10px;">地理位置
+			嵩山属伏牛山系，东依河南省省会郑州，西临古都洛阳，北临黄河，南靠颍水。环山地跨新密、登封、汝州、巩义、偃师、伊川等市县。地理坐标为：东经112°56′07″至113°11′32″，北纬34°23′31″至34°35′53″[1]。</p>
+			<p style="position:relative;top:30px;">气候特征
+嵩山属北温带季风气候，年平均气温14.3℃，平均降水量640.9毫米。四季分明并各具特色，一年中7月最热，平均气温27.3℃，1月最冷，平均气温0.2℃。
+	嵩山山下全年平均温度14.3℃，山上平均8.5℃，山上年降雨量864毫米。</p>
+			<a  style="position:relative;top:10px;left:370px;"href="https://baike.sogou.com/v64586250.htm?fromTitle=%E5%B5%A9%E5%B1%B1">查看更多</a>
+		</div>
+		<div id="rongyu">
+			<img id="guanxin" src="观星台.jpg">
+			<p>1982年，嵩山被国务院颁布为首批国家重点风景名胜区</p>
+			<p>2001年3月16日，嵩山被确认为中国首批国家地质公园</p>
+			<p>2003年7月1日，嵩山国家地质公园揭碑开园</p>
+			<p>2003年8月21日，嵩山成为中国首批世界地质公园的候选地</p>
+			<p>2004年6月27日，嵩山世界地质地质公园正式颁牌，2004年6月30日，嵩山世界地质公园正式揭牌开园</p>
+			<p>2004年2月13日，嵩山被联合国教科文组织列为世界地质公园</p>
+			<p>2007年3月7日，被国家旅游局批准为第一批国家AAAAA级旅游景区</p>
+			<p>2010年8月1日，坐落在嵩山腹地及周围的天地之中历史建筑群（少林寺（常住院、初祖庵、塔林）、东汉三阙（太室阙、少室阙、启母阙）、中岳庙、嵩岳寺塔、会善寺、嵩阳书院、观星台）被联合国科教文组织列为世界文化遗产。</p>
+		</div>
+	</div>
+	<div id="poem">
+		<div id="p1">
+			<h2 class="cen">归嵩山作</h2>
+			<h4 class="cen">[唐]王维</h4>
+			<p class="cen">清川带长薄，车马去闲闲。</p>
+			<p class="cen">流水如有意，暮禽相与还。</p>
+			<p class="cen">荒城临古渡，落日满秋山。</p>
+			<p class="cen">迢递嵩高下，归来且闭关。</p>
+		</div>
+		<div id="p2">
+			<h2 class="cen">送杨山人归嵩山</h2>
+			<h4 class="cen">[唐]李白</h4>
+			<p class="cen">我有万古宅，嵩阳玉女峰。</p>
+			<p class="cen">长留一片月，挂在东溪松。</p>
+			<p class="cen">尔去掇仙草，菖蒲花紫茸。</p>
+			<p class="cen">岁晚或相访，青天骑白龙。</p>
+		</div>
+		<div id="p3">
+			<h2 class="cen">送裴十八图南归嵩山其二</h2>
+			<h4 class="cen">[唐]李白</h4>
+			<p class="cen">君思颍水绿，忽复归嵩岑。</p>
+			<p class="cen">归时莫洗耳，为我洗其心。</p>
+			<p class="cen">洗心得真情，洗耳徒买名。</p>
+			<p class="cen">谢公终一起，相与济苍生。</p>
+		</div>
+		<div id="p4">
+			<h2 class="cen">和人游嵩山十二题其九·天池</h2>
+			<h4 class="cen">[宋]范仲淹</h4>
+			<p class="cen">岳顶见天池，神异安可度。</p>
+			<p class="cen">勿谓无波涛，云雷有时恶。</p>
+			<p class="cen">乘此澄清间，吾缨可以濯。</p>
+		</div>
+		<div id="p5">
+			<h2 class="cen">和人游嵩山十二题其一·公路涧</h2>
+			<h4 class="cen">[宋]范仲淹</h4>
+			<p class="cen">嵩高发灵源，北望洛阳注。</p>
+			<p class="cen">清流引河汉，白气横云雾。</p>
+			<p class="cen">英雄惜此地，百万曾相距。</p>
+			<p class="cen">近代无战争，常人自来去。</p>
+		</div>
+		<div id="p6">
+			<h2 class="cen">送卢处士归嵩山别业</h2>
+			<h4 class="cen">[唐]刘禹锡</h4>
+			<p class="cen">世业嵩山隐，云深无四邻。</p>
+			<p class="cen">药炉烧姹女，酒瓮贮贤人。</p>
+			<p class="cen">晚日华阴雾，秋风函谷尘。</p>
+			<p class="cen">送君从此去，铃阁少谈宾。</p>
+		</div>
+		<div id="p7">
+			<h1 class="cen">望嵩山</h1>
+			<h4 class="cen">[唐]吴融</h4>
+			<p class="cen">三十六峰危似冠，晴楼百尺独登看。</p>
+			<p class="cen">高凌鸟外青冥窄，翠落人间白昼寒。</p>
+			<p class="cen">不觉衡阳遮雁过，如何钟阜斗龙盘。</p>
+			<p class="cen">始知万岁声长在，只待东巡动玉鸾。</p>
+		</div>
+	</div>
+	<div id="shaolin">
+		<p id="fengcai">----------少林少林----------</p>
+		<div id="picture">
+			<div id="p1box">
+				<img id="pp1" style="height:250px;width:600px; " src="s1.png">
+				<div id="p1w"><p id="p1w1">秋枫落叶</p></div>
+			</div>
+			<div id="p2box">
+ 				<img id="pp2" style="height:250px;width:300px; " src="s2.png">
+ 				<div id="p2w"><p id="p2w1">绘画少林寺</p></div>
+ 			</div>
+ 			<div id="p3box">
+ 				<img id="pp3" style="height:250px;width:300px; " src="s3.png">
+ 				<div id="p3w"><p id="p3w1">全景绘画中的少林</p></div>
+ 			</div>
+ 			<div id="p4box">
+				<img id="pp4" style="height:250px;width:300px; " src="s4.jpg">
+				<div id="p4w"><p id="p4w1">嵩山少林大门</p></div>
+ 			</div>
+ 			<div id="p5box">
+ 				<img id="pp5" style="height:250px;width:300px; " src="s5.jpg">
+ 				<div id="p5w"><p id="p5w1">绿色少林</p></div>
+ 			</div>
+ 			<div id="p6box">
+ 				<img id="pp6" style="height:250px;width:300px; " src="s6.jpg">
+ 				<div id="p6w"><p id="p6w1">少林寺内门</p></div>
+ 			</div>
+ 			<div id="p7box">
+				<img id="pp7" style="height:250px;width:300px; " src="s7.jpg">
+				<div id="p7w"><p id="p7w1">塔群</p></div>
+			</div>
+		</div>
+	</div>
+	<div id="back">
+		<img style="width:50px;height:50px;" id="pic" src="back.jpg">
+	</div>
+</body>
+	<script>
+		var box=document.getElementById("box");
+		var alter=document.getElementById("alter");
+		var slide=document.getElementsByClassName("slide");
+		var subscript=document.getElementById("subscript");
+		var liList=document.getElementById("subscript").children;
+		var index=1;
+		var time;
+		var isMoving=false;
+		var p1w=document.getElementById("p1w");
+		var p1box=document.getElementById("p1box");
+		var p1w1=document.getElementById("p1w1");
+		var p2w=document.getElementById("p2w");
+		var p2box=document.getElementById("p2box");
+		var p2w1=document.getElementById("p2w1");
+		var p3w=document.getElementById("p3w");
+		var p3box=document.getElementById("p3box");
+		var p3w1=document.getElementById("p3w1");
+		var p4w=document.getElementById("p4w");
+		var p4box=document.getElementById("p4box");
+		var p4w1=document.getElementById("p4w1");
+		var p5w=document.getElementById("p5w");
+		var p5box=document.getElementById("p5box");
+		var p5w1=document.getElementById("p5w1");
+		var p6w=document.getElementById("p6w");
+		var p6box=document.getElementById("p6box");
+		var p6w1=document.getElementById("p6w1");
+		var p7w=document.getElementById("p7w");
+		var p7box=document.getElementById("p7box");
+		var p7w1=document.getElementById("p7w1");
+		var n4a=document.getElementById("n4a");
+		var pic=document.getElementById("pic");
+		pic.onclick=function(){
+			document.body.scrollTop=document.documentElement.scrollTop=0;
+		}
+		function next(){
+			index++;
+			animate(alter,{left:-1200*index},function(){
+				if(index==5){
+					alter.style.left="-1200px";
+					index=1;
+				}
+			});
+		}
+		var timer=setInterval(next,3000);
+		box.onmouseover=function(){
+			clearTimeout(timer);
+		}
+		box.onmouseout=function(){
+			timer=setInterval(next,3000);
+		}
+		p1box.onmouseover=function(){
+			animate(p1w,{left:270});
+		}
+		p1box.onmouseout=function(){
+			animate(p1w,{left:-100});	
+		}
+		p2box.onmouseover=function(){
+			animate(p2w,{left:110});
+		}
+		p2box.onmouseout=function(){
+			animate(p2w,{left:-100});	
+		}
+		p3box.onmouseover=function(){
+			animate(p3w,{left:90});
+		}
+		p3box.onmouseout=function(){
+			animate(p3w,{left:-200});	
+		}
+		p4box.onmouseover=function(){
+			animate(p4w,{left:100});
+		}
+		p4box.onmouseout=function(){
+			animate(p4w,{left:-200});	
+		}
+		p5box.onmouseover=function(){
+			animate(p5w,{left:120});
+		}
+		p5box.onmouseout=function(){
+			animate(p5w,{left:-200});	
+		}
+		p6box.onmouseover=function(){
+			animate(p6w,{left:110});
+		}
+		p6box.onmouseout=function(){
+			animate(p6w,{left:-200});	
+		}
+		p7box.onmouseover=function(){
+			animate(p7w,{left:130});
+		}
+		p7box.onmouseout=function(){
+			animate(p7w,{left:-200});	
+		}
+		for(var i=0;i<liList.length;++i){
+		liList[i].idx=i;
+		liList[i].onclick=function(){
+			console.log(index);
+			index=this.idx+1;
+			animate(alter,{left:-1200*index});
+		}
+	}
+	</script>
+</html>
